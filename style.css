@@ -1,0 +1,33 @@
+
+body { 
+    color: rgb(219, 39, 39);
+    background-color: rgb(72, 119, 92);
+    
+}
+* {
+    border: black;
+    border-style: dotted;
+    padding: 5px;
+    margin: 5px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+}
+#one{
+    margin-bottom: 5px;
+}
+#two{
+    margin-top: 5px;
+}
+p{
+    color: black;
+}
+h1, h2 {
+
+    text-align: center;
+    
+}
