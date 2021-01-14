@@ -67,7 +67,56 @@ else{
     alert('Wrong!')
     wrongAnswers = (wrongAnswers + 1);
 };
-alert( userName + ', thanks for playing my guessing game! You got' + rightAnswers + ' answers right and' + wrongAnswers + ' answers wrong!')
+
+
+for( var i = 0; i < 4; i++) {
+    var question6 = prompt('Guess a number between 1 and 10..');
+    var response6 = parseInt(question6);
+        if(response6 > 10){
+            alert('Too high!');
+        };
+        if(response6 < 1){
+            alert('Too low!');
+        };
+        if(response6 >= 1 && response6!== 8 && response6 <= 10) {
+            alert('Try again');
+        };
+        if(response6 === 8) {
+            alert('Good job! You got it right!');
+            rightAnswers = (rightAnswers + 1);
+            break;
+        };
+        if(i == 3){
+            alert('The number was 8..');
+            wrongAnswers = (wrongAnswers +1);
+            break;
+        }
+}
+
+var arrayOfAnswers = ['snowboarding','skateboarding','motorcycle riding','mountain biking','climbing','playing music']
+question7:
+for( i = 0; i < 6; i++){
+    var response7 = prompt('What is one of my favorite hobbies?').toLowerCase();
+    for( j = 0; j < arrayOfAnswers.length; j++){
+        if(response7 == arrayOfAnswers[j]){
+            alert('Good job!')
+            rightAnswers =(rightAnswers + 1)
+            break question7; 
+        }
+        else{
+            alert('try again')
+            break;
+        }
+    }
+    if( i == 5){
+        alert('You ran out of guess');
+        wrongAnswers = (wrongAnswers + 1)
+        
+    }
+}
+alert(' Some of my favorite hobbies are snowboarding, skateboarding, motorcycle riding, mountain biking, climbing, and playing music')
+
+alert( userName + ', thanks for playing my guessing game! You got ' + rightAnswers + ' answers right and ' + wrongAnswers + ' answers wrong!')
 
 
 

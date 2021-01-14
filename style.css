@@ -1,6 +1,6 @@
 
 body { 
-    background-color: rgb(72, 119, 92);
+    background-color: rgb(124, 129, 126);
     max-width: 960px;
     min-width: 750px;
     border: 4px double black;
@@ -12,11 +12,11 @@ body {
     padding: 5px;
     margin: 5px;
 }*/
-article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    width: auto;
+div{
+    border: 2px solid black;
+    float: left;
+    width: 450px;
+ 
 }
 #one{
     margin-bottom: 5px;
@@ -30,11 +30,16 @@ p{
     height: inherit;
     border: 2px solid black;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    margin: 5px;
+    background-color: rgb(117, 139, 182);
+    
 }
 h1 { 
     border-bottom-style: double;
     border-bottom-color: black;
     color: saddlebrown;
+    text-shadow: 1px 1px black;
 }
 h1, h2 {
 
@@ -42,6 +47,7 @@ h1, h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
     padding: 5px;
+
     
 }
 h2 {
@@ -49,7 +55,22 @@ h2 {
     width: 90%;
     margin: 5px auto 5px auto;
     color: saddlebrown;
+    box-shadow: 2px 2px 2px;
+    text-shadow: 1px 1px black;
+    background-color: rgb(5, 82, 5);
+ 
 }
 section {
     margin: 5px;
+    float: left;
+}
+article {
+    max-width: 960px;
+    min-width: 760px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* width: auto;  */
+    margin: 20px 20px;
 }
