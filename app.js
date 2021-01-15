@@ -120,6 +120,20 @@ alert( userName + ', thanks for playing my guessing game! You got ' + rightAnswe
 
 
 
+var arrayOfQuestions = ['What is my name?', 'Am I a pilot?', 'Where was my first job?']
+var arrayOfAnswers = ['matt', 'yes', 'steak n shake']
+var riteAnswers = 0 
+for( var i = 0; i < arrayOfQuestions.length; i++) {
+    var answers1 = prompt(arrayOfQuestions[i]).toLowerCase();
+    if(answers1 === arrayOfAnswers[i]){
+        alert('Good Job!');
+        riteAnswers ++;
+    }else{
+        alert('Not Quite..')
+    }
+    } 
+
+
 /*
 var name = ('Hey there ');
 

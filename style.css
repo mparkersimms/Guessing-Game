@@ -1,10 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Serif+KR:wght@700&family=Poiret+One&display=swap');
+
+
+
 body { 
-    background-color: rgb(124, 129, 126);
-    max-width: 960px;
-    min-width: 750px;
+    position: relative;
+    background-color: rgb(124, 129, 126); 
+    /* background-image: url('alessandro-sacchi-NUFnfYd09iI-unsplash.jpg'); */
+    width: 960px;
+    height: 100%;
     border: 4px double black;
     margin: 10px auto 0 auto;
+    padding: 10px;
+    font-family: 'Noto Serif KR', serif;
+    /* font-weight: bolder; */
 }
 /** {
     border: black;
@@ -12,19 +21,36 @@ body {
     padding: 5px;
     margin: 5px;
 }*/
-div{
+.content {
     border: 2px solid black;
     float: left;
     width: 450px;
  
 }
+#space {
+    height: 85px;
+}
 #one{
-    margin-bottom: 5px;
+    background-image: url('alessandro-sacchi-NUFnfYd09iI-unsplash.jpg');
+    background-size: cover;
 }
 #two{
-    margin-top: 10px;
+    background-image: url('ales-krivec-N-aTikX-b00-unsplash.jpg');
+    background-size: cover;
 }
-p{
+#three{
+    background-image: url('steve-carter-Ixp4YhCKZkI-unsplash.jpg');
+    background-size: cover;
+}
+#four{
+    background-image: url('rohit-tandon-9wg5jCEPBsw-unsplash.jpg');
+    background-size: cover;
+}
+#five{
+    background-image: url('ales-krivec-N-aTikX-b00-unsplash.jpg');
+    background-size: cover;
+}
+p {
     color: black;
     padding: 20px;
     height: inherit;
@@ -32,23 +58,31 @@ p{
     border-radius: 10px;
     box-shadow: 2px 2px 2px;
     margin: 5px;
-    background-color: rgb(117, 139, 182);
+    background-color: rgba(117, 139, 182, .5);
+    font-size: 10pt;
     
 }
+ol {
+    color: black;
+    padding: 20px;
+    height: inherit;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    margin: 5px;
+    padding-left: 40px;
+    background-color: rgba(117, 139, 182, .5);
+} 
 h1 { 
-    border-bottom-style: double;
-    border-bottom-color: black;
     color: saddlebrown;
+    font-size: 70pt;
     text-shadow: 1px 1px black;
-}
-h1, h2 {
-
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    padding: 5px;
-
-    
+    font-family: 'Monoton', cursive;
+    margin:0px;
+    position: relative;
+    top: -27px;
+    /* padding:10px 0px 0px 0px; */
 }
 h2 {
     border: 2px solid black;
@@ -57,7 +91,10 @@ h2 {
     color: saddlebrown;
     box-shadow: 2px 2px 2px;
     text-shadow: 1px 1px black;
-    background-color: rgb(5, 82, 5);
+    background-color: rgba(5, 82, 5, .4);
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Poiret One', cursive; 
  
 }
 section {
@@ -65,12 +102,39 @@ section {
     float: left;
 }
 article {
+    /* position: relative; */
+    top: 85px;
     max-width: 960px;
     min-width: 760px;
-    height: 450px;
+    height: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     /* width: auto;  */
     margin: 20px 20px;
 }
+header {
+    position:fixed;
+    width: 960px;
+    background-image: url('samuel-ferrara-1527pjeb6jg-unsplash.jpg');
+    background-size: cover;
+    background-position-y: 40%;
+    height: 85px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+    
+    
+}
+header :hover {
+    color: blue;
+
+}
+main {
+    max-height: none;
+   
+}
+
+/* .content {
+    background-image: url('alessandro-sacchi-NUFnfYd09iI-unsplash.jpg');
+    background-size: cover;
+ } */
