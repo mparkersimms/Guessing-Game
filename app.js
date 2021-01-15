@@ -1,4 +1,7 @@
 'use strict'
+function getToKnowMe(){
+
+
 var rightAnswers = 0
 var wrongAnswers = 0
 
@@ -97,7 +100,7 @@ var arrayOfAnswers = ['snowboarding','skateboarding','motorcycle riding','mounta
 question7:
 for( i = 0; i < 6; i++){
     var response7 = prompt('What is one of my favorite hobbies?').toLowerCase();
-    for( j = 0; j < arrayOfAnswers.length; j++){
+    for(var j = 0; j < arrayOfAnswers.length; j++){
         if(response7 == arrayOfAnswers[j]){
             alert('Good job!')
             rightAnswers =(rightAnswers + 1)
@@ -117,7 +120,8 @@ for( i = 0; i < 6; i++){
 alert(' Some of my favorite hobbies are snowboarding, skateboarding, motorcycle riding, mountain biking, climbing, and playing music')
 
 alert( userName + ', thanks for playing my guessing game! You got ' + rightAnswers + ' answers right and ' + wrongAnswers + ' answers wrong!')
-
+}
+getToKnowMe();
 
 
 /*
