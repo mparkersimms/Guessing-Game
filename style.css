@@ -6,21 +6,15 @@
 body { 
     position: relative;
     background-color: rgb(124, 129, 126); 
-    /* background-image: url('alessandro-sacchi-NUFnfYd09iI-unsplash.jpg'); */
     width: 960px;
     height: 100%;
     border: 4px double black;
     margin: 10px auto 0 auto;
     padding: 10px;
     font-family: 'Noto Serif KR', serif;
-    /* font-weight: bolder; */
+    
 }
-/** {
-    border: black;
-    border-style: dotted;
-    padding: 5px;
-    margin: 5px;
-}*/
+
 .content {
     border: 2px solid black;
     float: left;
@@ -82,7 +76,6 @@ h1 {
     margin:0px;
     position: relative;
     top: -27px;
-    /* padding:10px 0px 0px 0px; */
 }
 h2 {
     border: 2px solid black;
@@ -102,7 +95,6 @@ section {
     float: left;
 }
 article {
-    /* position: relative; */
     top: 85px;
     max-width: 960px;
     min-width: 760px;
@@ -110,7 +102,6 @@ article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    /* width: auto;  */
     margin: 20px 20px;
 }
 header {
@@ -134,7 +125,4 @@ main {
    
 }
 
-/* .content {
-    background-image: url('alessandro-sacchi-NUFnfYd09iI-unsplash.jpg');
-    background-size: cover;
- } */
+
