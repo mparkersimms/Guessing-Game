@@ -106,15 +106,12 @@ for( i = 0; i < 6; i++){
             rightAnswers =(rightAnswers + 1)
             break question7; 
         }
-        else{
-            alert('try again')
-            break;
+    }if( response7 != arrayOfAnswers[j]){
+            alert('try again');
         }
-    }
-    if( i == 5){
-        alert('You ran out of guess');
-        wrongAnswers = (wrongAnswers + 1)
-        
+    if( i=== 5){
+        alert('you ran out of guesses');
+        wrongAnswers = (wrongAnswers++)
     }
 }
 alert(' Some of my favorite hobbies are snowboarding, skateboarding, motorcycle riding, mountain biking, climbing, and playing music')
